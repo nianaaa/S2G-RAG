@@ -114,7 +114,7 @@ def build_output_record(
     strong_pos_threshold: float,
     strong_neg_threshold: float,
 ) -> dict[str, Any] | None:
-    """Convert a single trace row into a stage-2 feature record."""
+    """Convert a single trace row into a feature record."""
     task_content = str(
         get_first_present(
             row,
@@ -187,7 +187,7 @@ def build_output_record(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Build stage-2 judge training features from an inference trace CSV."
+        description="Build judge training features from an inference trace CSV."
     )
     parser.add_argument("--input", required=True, help="Path to the inference trace CSV.")
     parser.add_argument("--output", required=True, help="Path to the output JSONL file.")
