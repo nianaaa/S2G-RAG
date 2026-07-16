@@ -226,9 +226,9 @@ def balance_by_turn(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Merge and clean stage-2 teacher supervision."
+        description="Merge and clean teacher supervision."
     )
-    parser.add_argument("--features", required=True, help="Stage-2 feature JSONL path.")
+    parser.add_argument("--features", required=True, help="feature JSONL path.")
     parser.add_argument("--labels", required=True, help="Teacher label JSONL path.")
     parser.add_argument("--output", required=True, help="Cleaned supervision JSONL path.")
     parser.add_argument(
@@ -370,7 +370,7 @@ def main() -> None:
         for sample in final_samples:
             handle.write(json.dumps(sample, ensure_ascii=False) + "\n")
 
-    print("Finished cleaning stage-2 supervision.")
+    print("Finished cleaning supervision.")
     print(f"Loaded features: {len(feature_map)}")
     print(f"Kept samples before balancing: {stats.get('kept_raw', 0)}")
     print(f"Final samples written: {len(final_samples)}")
