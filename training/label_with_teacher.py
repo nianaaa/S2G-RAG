@@ -62,7 +62,7 @@ def extract_gap_items(payload: dict[str, Any]) -> list[Any]:
 
 
 def normalize_teacher_payload(payload: dict[str, Any]) -> dict[str, Any] | None:
-    """Normalize teacher output to the canonical stage-2 schema."""
+    """Normalize teacher output to the canonical schema."""
     sufficient = payload.get("sufficient")
     if not isinstance(sufficient, bool):
         return None
@@ -156,9 +156,9 @@ def iter_selected_examples(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Label stage-2 judge snapshots with a teacher model."
+        description="Label judge snapshots with a teacher model."
     )
-    parser.add_argument("--input", required=True, help="Stage-2 feature JSONL path.")
+    parser.add_argument("--input", required=True, help="feature JSONL path.")
     parser.add_argument("--output", required=True, help="Teacher label JSONL path.")
     parser.add_argument("--model", default="gpt-4o-mini", help="Teacher model name.")
     parser.add_argument(
