@@ -146,7 +146,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="LoRA fine-tuning for the S2G-Judge model."
     )
-    parser.add_argument("--data", required=True, help="Cleaned stage-2 supervision JSONL path.")
+    parser.add_argument("--data", required=True, help="Cleaned supervision JSONL path.")
     parser.add_argument("--base-model", required=True, help="Base instruct model path or model id.")
     parser.add_argument("--output-dir", required=True, help="Training output directory.")
     parser.add_argument("--validation-ratio", type=float, default=0.1, help="Validation split ratio.")
