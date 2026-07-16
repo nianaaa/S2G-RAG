@@ -22,7 +22,7 @@ def load_jsonl(path: Path, source_name: str) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Merge multiple cleaned stage-2 supervision files."
+        description="Merge multiple cleaned supervision files."
     )
     parser.add_argument(
         "--inputs",
