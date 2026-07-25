@@ -202,12 +202,12 @@ def call_reasoner_batch(
         ]
 
     if gpt:
-        api_key = os.environ.get("CHATANYWHERE_API_KEY")
+        api_key = os.environ.get("OPENAI_API_KEY")
         if not api_key:
-            raise RuntimeError("Please set CHATANYWHERE_API_KEY.")
+            raise RuntimeError("Please set OPENAI_API_KEY.")
 
         client = OpenAI(
-            base_url="https://api.chatanywhere.tech/v1",
+            base_url="https://api.openai.com/v1",
             api_key=api_key,
         )
 
