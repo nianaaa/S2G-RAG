@@ -10,6 +10,8 @@ This repository contains the official implementation of **S2G-RAG: Structured Su
 [[arXiv](https://arxiv.org/abs/2604.23783)]
 [[Code](https://github.com/nianaaa/S2G-RAG)]
 
+Thank you for your interest in our work! We have released the **S2G-Judge LoRA checkpoint fine-tuned on HotpotQA**. You can download it from [LoraCheckpoint](https://github.com/nianaaa/S2G-RAG/tree/main/LoraCheckpoint).
+
 ## Overview
 
 S2G-RAG is an iterative retrieval-augmented QA framework with an explicit and modular controller, **S2G-Judge**. At each retrieval turn, the judge reads only the question and the accumulated evidence context, then predicts:
