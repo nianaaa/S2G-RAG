@@ -12,6 +12,8 @@ This repository contains the official implementation of **S2G-RAG: Structured Su
 
 Thank you for your interest in our work! We have released the **S2G-Judge LoRA checkpoint fine-tuned on HotpotQA**. You can download it from [LoraCheckpoint](https://github.com/nianaaa/S2G-RAG/tree/main/LoraCheckpoint).
 
+**Note:** The released checkpoint is a retrained version with comparable performance.
+
 We have also released the **training and validation data used to fine-tune this LoRA checkpoint**, available in [data/hotpotqa_lora](https://github.com/nianaaa/S2G-RAG/tree/main/data/hotpotqa_lora).
 
 ## Overview
